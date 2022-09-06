@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical documentation page</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!-- nav starts -->
+    <nav id="navbar">
+        <header> JS Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction to Javascript</a></li>
+            <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
+            <li><a class="nav-link" href="#Javascript_vs_Java">Javascript vs Java</a></li>
+            <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+            <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+            <li><a class="nav-link" href="#Arrays">Arrays</a></li>
+            <li><a class="nav-link" href="#Closure">Closure</a></li>
+            <li><a class="nav-link" href="#if..else">if..else</a></li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+    </nav>
+
+    <!-- main starts -->
+    <main id="main-doc">
+       <section class="main-section" id="Introduction">
+           <header>Introduction to Javascrip</header>
+           <article>
+            <p>JavaScript (JS) may be a lightweight, interpreted, or just-in-time compiled programing language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript may be a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles. Read more about JavaScript.
+                This section is devoted to the JavaScript language itself, and not the parts that are specific to sites or other host environments. For information about API specifics to sites , please see Web APIs and DOM.
+                The standards for JavaScript are the ECMAScript Language Specification (ECMA-262) and therefore the ECMAScript Internationalization API specification (ECMA-402). The JavaScript documentation throughout MDN is predicated on the newest draft versions of ECMA-262 and ECMA-402. And in cases where some proposals for brand spanking new ECMAScript features have already been implemented in browsers, documentation and examples in MDN articles may use a number of those new features.
+            </p>
+           </article>
+       <section class="main-section" id="What_you_should_already_know">
+           <header>What you should already know</header>
+           <article>
+                <p>This guide assumes you have the following basic background:</p>
+                <ul>
+                    <li>A general understanding of the Internet and the World Wide Web.</li>
+                    <li>Good working knowledge of HyperText Markup Language.</li>
+                    <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript</a>.</li>
+                </ul>
+                <p>JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive (e.g., having complex animations, clickable buttons, popup menus, etc.).&nbsp;&nbsp;There are also more advanced server side versions of JavaScript such as Node.js, which allow you to add&nbsp;more functionality to a website than downloading files (such as realtime collaboration between multiple computers).&nbsp;Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
+           </article>
+       </section>
+       <section class="main-section" id="Javascript_vs_Java">
+           <header>Javascript vs Java</header>
+           <article>
+               <h4>What is Java? </h4>
+               <p>Java is a multi-platform, object-oriented, and network-centric, programming language. It is among the most used programming language. It also used as a computing platform, and it was first released by Sun Microsystem in 1995. It was later acquired by Oracle Corporation. </p>
+               <h4>What is JavaScript?</h4>
+               <p>JavaScript is a scripting language that helps you create interactive web pages. It follows the rules of client-side programming, so it runs in the user's web browser without the need for any resources form the web server. You can also use JavaScript with other technologies like REST APIs, XML, and more. Nowadays JavaScript also using technologies like Node js. </p>
+               <img src="https://www.codingninjas.com/blog/wp-content/uploads/2020/06/J.png" alt="javs vs js">
+               <h4>Advantage of Java</h4>
+               <ul>
+                   <li>Detailed documentation is available.</li>
+                   <li>A large pool of skilled developers available</li>
+                   <li>Huge array of 3rd party libraries</li>
+                   <li>It allows you to form standard programs and reusable code.</li>
+                   <li>Easy to navigate libraries</li>
+                </ul>
+                <h4>Advantage of Javascript</h4>
+                <ul>
+                    <li>It is an open-source project with Microsoft's patronage</li>
+                    <li>Specially designed tool for small scripts</li>
+                    <li>Supports classes, interfaces, &amp; modules.</li>
+                    <li>Compiled JavaScript runs in any browser</li>
+                    <li>Allows cross-compilation</li>
+                    <li>It allows you to create interfaces that react when the user hovers using mouse.</li>
+                </ul>
+           </article>
+       </section>
+       <section class="main-section" id="Hello_World">
+           <header>Hello World</header>
+           <article>
+               <p></p>
+               <p></p>
+                <code>
+                    script <br> type="text/javascript">"<br>"
+                       console.log("Hello World!");<br>
+                    script
+                   
+                </code>
+           </article>
+       </section>
+       <section class="main-section" id="Data_Types">
+           <header>Data Types</header>
+           <article>
+                <h4>Data Types in JavaScript</h4>
+                <p>Data types basically specify what kind of data can be stored and manipulated within a program.</p>
+                <p>There are six basic data types in JavaScript which can be divided into three main categories:</p>
+               <ul>
+                    <li> primitive (or <em>primary</em>) </li>
+                    <li><em>composite</em> (or <em>reference</em>)</li>
+                    <li> and <em>special</em> data types.</li>
+                    <p> String, Number, and Boolean are primitive data types. Object, Array, and Function (which are all types of objects) are composite data types.  Whereas Undefined and Null are special data types. </p>
+                    Data types
+                    A value in JavaScript is always of a certain type. For example, a string or a number.</p>
+                    
+                    <p> There are eight basic data types in JavaScript. Here, we’ll cover them in general and in the next chapters we’ll talk about each of them in detail.</p>
+                    
+                    <p> We can put any type in a variable. For example, a variable can at one moment be a string and then store a number:</p>
+                    <code> // no error <br>
+                    let message = "hello";<br>
+                    message = 123456;</code>
+                   
+                    <p>Programming languages that allow such things, such as JavaScript, are called “dynamically typed”, meaning that there exist data types, but variables are not bound to any of them.</p>
+                    <code>Number <br>
+                    let n = 123;<br>
+                    n = 12.345;</code>
+                    
+                    <p>The number type represents both integer and floating point numbers.
+                    
+                    There are many operations for numbers, e.g. multiplication *, division /, addition +, subtraction -, and so on.
+                    
+                    Besides regular numbers, there are so-called “special numeric values” which also belong to this data type: Infinity, -Infinity and NaN.
+                    
+                    Infinity represents the mathematical Infinity ∞. It is a special value that’s greater than any number.</p>
+                    
+                   <p>We can get it as a result of division by zero:</p> 
+                    <code> alert( 1 / 0 ); // Infinity</code>
+                   
+                   <p>Or just reference it directly:</p> 
+                    <code>alert( Infinity ); // Infinity</code>
+                    
+                   <p>NaN represents a computational error. It is a result of an incorrect or an undefined mathematical operation, for instance:</p> 
+                    <code>alert( "not a number" / 2 ); // NaN, such division is erroneous</code>
+                    
+                   <p>NaN is sticky. Any further operation on NaN returns NaN:</p> 
+                    <code>alert( "not a number" / 2 + 5 ); // NaN</code>
+                    
+                   <p>So, if there’s a NaN somewhere in a mathematical expression, it propagates to the whole result.</p> 
+               </ul>
+           </article>
+       </section>
+       <section class="main-section" id="Arrays">
+        <header>Arrays</header>
+        <article>
+            <p>
+                What is an Array?
+                An array is a special variable, which can hold more than one value at a time. </p>
+
+               <p>If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:</p> 
+                <code>var car1 = "Saab";
+                var car2 = "Volvo";
+                var car3 = "BMW";</code>
+
+                <p>However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300?</p> 
+
+               <p> The solution is an array!</p>
+
+               <p>An array can hold many values under a single name, and you can access the values by referring to an index number.</p> 
+
+               <p> Creating an Array
+                Using an array literal is the easiest way to create a JavaScript Array.</p>
+
+                Syntax:
+                <code> var array_name = [item1, item2, ...];      
+                Example
+                var cars = ["Saab", "Volvo", "BMW"];</code>
+               
+               <p> Spaces and line breaks are not important. A declaration can span multiple lines:</p>
+
+                Example
+                <code>   var cars = [
+                "Saab",
+                "Volvo",
+                "BMW"
+                ];</code>
+             
+               <p> Using the JavaScript Keyword new
+                The following example also creates an Array, and assigns values to it:</p>
+
+                Example
+                <code>var cars = new Array("Saab", "Volvo", "BMW");</code>
+                
+                <p> The two examples above do exactly the same. There is no need to use new Array().
+                For simplicity, readability and execution speed, use the first one (the array literal method).</p>
+        </article>
+    </section>
+    <section class="main-section" id="Closure">
+        <header>Closure</header>
+        <article>
+            <p>A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function’s scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.            </p>
+            <p>Closure is one of important concept in JavaScript. It is widely discussed and still confused concept. Let's understand what the closure is.
+
+                First of all, let's see the definition of the Closure given by Douglas Crockford: crockford.com/javascript/private.html
+                
+                Closure means that an inner function always has access to the vars and parameters of its outer function, even after the outer function has returned.
+                
+                You have learned that we can create nested functions in JavaScript. Inner function can access variables and parameters of an outer function (however, cannot access arguments object of outer function). Consider the following example.</p>
+            <ul>
+                <li></li>
+                <code></code>
+            </ul>
+        </article>
+    </section>
+    <section class="main-section" id="if..else">
+        <header>if..else</header>
+        <article>
+            <p>Conditional statements are used to perform different actions based on different conditions.</p>
+
+               <p>Conditional Statements
+                Very often when you write code, you want to perform different actions for different decisions.</p> 
+                
+               <p>You can use conditional statements in your code to do this.</p> 
+                
+               <p>In JavaScript we have the following conditional statements:</p> 
+                
+               <p>Use if to specify a block of code to be executed, if a specified condition is true
+                Use else to specify a block of code to be executed, if the same condition is false
+                Use else if to specify a new condition to test, if the first condition is false
+                Use switch to specify many alternative blocks of code to be executed
+                The switch statement is described in the next chapter.</p> 
+                
+               <p> The if Statement
+                Use the if statement to specify a block of JavaScript code to be executed if a condition is true.
+                </p>
+                <code>
+                    Syntax
+                if (condition) {
+                  //  block of code to be executed if the condition is true
+                }
+                </code>
+                
+               <p>Note that if is in lowercase letters. Uppercase letters (If or IF) will generate a JavaScript error.</p> 
+                
+               <p> Example
+                Make a "Good day" greeting if the hour is less than 18:00:</p>
+                <code> if (hour < 18) {<br>
+                  greeting = "Good day";<br>
+                } <br>
+                The result of greeting will be:</code>
+               
+                
+              <p>  Good day
+                The else Statement
+                Use the else statement to specify a block of code to be executed if the condition is false.</p>
+                
+                <code>
+                    if (condition) {<br>
+                  //  block of code to be executed if the condition is true<br>
+                } else {<br>
+                  //  block of code to be executed if the condition is false<br>
+                }<br>
+                </code>
+                <p> Example
+                If the hour is less than 18, create a "Good day" greeting, otherwise "Good evening":
+                </p>
+               <code>  if (hour < 18) {<br>
+                  greeting = "Good day";<br>
+                } else {<br>
+                  greeting = "Good evening";<br>
+                }</code>
+              <p>The result of greeting will be:
+                
+                Good day
+                The else if Statement
+                Use the else if statement to specify a new condition if the first condition is false.</p>
+                
+                <code>Syntax
+                if (condition1) {<br>
+                  //  block of code to be executed if condition1 is true<br>
+                } else if (condition2) {<br>
+                  //  block of code to be executed if the condition1 is false and condition2 is true<br>
+                } else {<br>
+                  //  block of code to be executed if the condition1 is false and condition2 is false<br>
+                }</code>
+                <p> Example
+                If time is less than 10:00, create a "Good morning" greeting, if not, but time is less than 20:00, create a "Good day" greeting, otherwise a "Good evening":
+                </p>
+               <code>if (time < 10) {<br>
+                  greeting = "Good morning";<br>
+                } else if (time < 20) {<br>
+                  greeting = "Good day";<br>
+                } else {<br>
+                  greeting = "Good evening";<br>
+                }</code>
+                <p>The result of greeting will be:</p>
+                <p> Good day
+                More Examples
+                Random link
+                This example will write a link to either W3Schools or to the World Wildlife Foundation (WWF). By using a random number, there is a 50% chance for each of the links.
+                </p>
+        </article>
+    </section>
+    <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+            <p><span>1. MDN</span>&nbsp;&nbsp;<span>W3school</span>&nbsp;&nbsp;<span>2. guru99</span>&nbsp;&nbsp;<span>3. tutorialspoint</span><span></span></p>
+        </article>
+    </section>
+    </main>
+</body>
+</html>
